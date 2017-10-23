@@ -9,6 +9,10 @@ Demultiplexing of metabarcoding data which consists of multiple markers.
 
 The categorization is based on Hidden Markov Model (HHMs) hits of the forward primer within the first 20 bp. This is very fast, and allows high throughput of the data.
 
+## Citation
+
+If you use this script and the HMMs, please cite our paper where we established this strategy. It's on it's way to getting submitted, updated info will be put here once it is published.
+
 ## Requirements
 
 * **SeqFilter:**
@@ -26,7 +30,28 @@ cd  ..
 
 ## Predefined HMMs
 
+### Plants:
+
+* Rbcl (long version with ~ 700 bp): hmm_rbcl.hmm
+ * forward primer: *CTTACCAGCCTTGATCGTTA*
+* Rbcl (short version with ~ 500 bp): hmm_rbcl_pollen.hmm
+ * forward primer: *ATGTCACCACAAACAGAGACTAAAGC*
+* psbA-trnH: hmm_psba.hmm
+ * forward primer: *GTTATGCATGAACGTAATGCTC*
+* ITS2: hmm_its2.hmm
+ * forward primer: *ATGCGATACTTGGTGTGAAT*
+
+### Animals:
+
+* COI: hmm_coi.hmm
+ * forward primer: *GGWACWGGWTGAACWGTWTAYCCYCC*
+
 ## Train HMMs yourself for your primers
+
+```sh
+hmmbuild hmm_marker.hmm primers_marker.fasta
+
+```
 
 ## Separation
 
