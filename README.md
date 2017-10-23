@@ -79,7 +79,8 @@ Things done in the following:
 * store the IDs
 * filter them with Seqfilter in marker specific fasta files.
 
-** This example: rbcl, its2 and psba-trnH. ** You may need to adapt to your purpose.
+** This example: rbcl, its2 and psba-trnH.** 
+You may need to adapt to your purpose.
 
 ```sh
 
@@ -119,4 +120,4 @@ rm 20bp*
 
 ```
 
-Done, you now have fastq files separated by marker, starting with a corresponding prefix.
+Done, you now have fastq files separated by marker, starting with a corresponding prefix. Unclassified ones start with 'xxxx_*'
