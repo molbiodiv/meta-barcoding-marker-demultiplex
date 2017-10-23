@@ -81,6 +81,7 @@ Things done in the following:
 **This example: rbcl, its2 and psba-trnH.** You may need to adapt to your purpose.
 
 ```sh
+ls  $data/*$RF | sed "s/^.*\/\([a-zA-Z0-9_.-]*\)$/\1/g" | sed "s/$RF//" > samples.txt
 
 for file in `cat samples.txt` ;
 do
