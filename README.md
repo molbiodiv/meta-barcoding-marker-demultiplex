@@ -44,7 +44,7 @@ cd  ..
 ### Animals:
 
 * COI: hmm_coi.hmm
- * forward primer: *GGWACWGGWTGAACWGTWTAYCCYCC*
+   * forward primer: GGWACWGGWTGAACWGTWTAYCCYCC
 
 ## Train HMMs yourself for your primers
 
