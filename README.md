@@ -32,19 +32,18 @@ cd  ..
 
 ### Plants:
 
-* Rbcl (long version with ~ 700 bp): hmm_rbcl.hmm
-  * forward primer: CTTACCAGCCTTGATCGTTA
-* Rbcl (short version with ~ 500 bp): hmm_rbcl_pollen.hmm
-  * forward primer: ATGTCACCACAAACAGAGACTAAAGC
-* psbA-trnH: hmm_psba.hmm
-  * forward primer: GTTATGCATGAACGTAATGCTC
-* ITS2: hmm_its2.hmm
-  * forward primer: ATGCGATACTTGGTGTGAAT
+* **Rbcl**
+  * long version with ~ 700 bp, forward primer CTTACCAGCCTTGATCGTTA: hmm_rbcl.hmm
+  * short version with ~ 500 bp, forward primer ATGTCACCACAAACAGAGACTAAAGC: hmm_rbcl_pollen.hmm
+* **psbA-trnH**
+  * forward primer: GTTATGCATGAACGTAATGCTC: hmm_psba.hmm
+* **ITS2**
+  * forward primer: ATGCGATACTTGGTGTGAAT: hmm_its2.hmm
 
 ### Animals:
 
-* COI: hmm_coi.hmm
-   * forward primer: GGWACWGGWTGAACWGTWTAYCCYCC
+* **COI**
+   * forward primer: GGWACWGGWTGAACWGTWTAYCCYCC: hmm_coi.hmm
 
 ## Train HMMs yourself for your primers
 
