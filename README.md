@@ -47,21 +47,12 @@ RF='_R1_001.fastq';
 RR='_R2_001.fastq';
 ```
 
-
-Speeding things up, only 20 bp for speedup, we just want to get the IDs anyway
-Translation into fasta for HMMer to work
-
-```sh
-ls  $data/*$RF | sed "s/^.*\/\([a-zA-Z0-9_.-]*\)$/\1/g" | sed "s/$RF//" > samples.txt
-
-for file in `cat samples.txt` ;
-do
-  $u -fastq_filter $data/$file$RF -fastaout $data/20bp_$file.fasta -fastq_trunclen 20
-done
-
-```
-
-Now hold these against the hmms and see which primers it belongs to, store the IDs and filter them with Seqfilter in marker specific fasta files.
+Things done in the following:
+* Speeding things up, only 20 bp for speedup, we just want to get the IDs anyway
+* Translation into fasta for HMMer to work
+* Hold these against the hmms and see which primers it belongs to
+* store the IDs
+* filter them with Seqfilter in marker specific fasta files.
 
 ** This example: rbcl, its2 and psba-trnH. ** You may need to adapt to your purpose.
 
@@ -69,7 +60,7 @@ Now hold these against the hmms and see which primers it belongs to, store the I
 
 for file in `cat samples.txt` ;
 do
-  #$u2 -fastq_filter $data/$file$RF -fastaout $data/20bp_$file.fasta -fastq_trunclen 20
+  $u -fastq_filter $data/$file$RF -fastaout $data/20bp_$file.fasta -fastq_trunclen 20
   hmmsearch --tblout hits_rbcl_$file.txt  $hmm/hmm_rbcl_pollen.hmm $data/20bp_$file.fasta
   hmmsearch --tblout hits_psba_$file.txt  $hmm/hmm_psba.hmm $data/20bp_$file.fasta
   hmmsearch --tblout hits_coi_$file.txt  $hmm/hmm_coi.hmm $data/20bp_$file.fasta
