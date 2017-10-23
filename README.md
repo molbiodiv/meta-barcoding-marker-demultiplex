@@ -33,13 +33,13 @@ cd  ..
 ### Plants:
 
 * Rbcl (long version with ~ 700 bp): hmm_rbcl.hmm
- - forward primer: *CTTACCAGCCTTGATCGTTA*
+  * forward primer: CTTACCAGCCTTGATCGTTA
 * Rbcl (short version with ~ 500 bp): hmm_rbcl_pollen.hmm
- - forward primer: *ATGTCACCACAAACAGAGACTAAAGC*
+  * forward primer: ATGTCACCACAAACAGAGACTAAAGC
 * psbA-trnH: hmm_psba.hmm
- - forward primer: *GTTATGCATGAACGTAATGCTC*
+  * forward primer: GTTATGCATGAACGTAATGCTC
 * ITS2: hmm_its2.hmm
- - forward primer: *ATGCGATACTTGGTGTGAAT*
+  * forward primer: ATGCGATACTTGGTGTGAAT
 
 ### Animals:
 
