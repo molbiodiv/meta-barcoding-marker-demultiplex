@@ -54,7 +54,8 @@ Things done in the following:
 * store the IDs
 * filter them with Seqfilter in marker specific fasta files.
 
-** This example: rbcl, its2 and psba-trnH. ** You may need to adapt to your purpose.
+** This example: rbcl, its2 and psba-trnH.** 
+You may need to adapt to your purpose.
 
 ```sh
 
