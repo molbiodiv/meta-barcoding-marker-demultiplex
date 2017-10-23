@@ -94,4 +94,4 @@ rm 20bp*
 
 ```
 
-Done, you now have fastq files separated by marker, starting with a corresponding prefix.
+Done, you now have fastq files separated by marker, starting with a corresponding prefix. Unclassified ones start with 'xxxx_*'
